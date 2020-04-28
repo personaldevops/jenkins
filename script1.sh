@@ -1,3 +1,11 @@
-#!/bin/bash 
+pipeline {
+   agent any
 
-echo "Testing Stage..."
+   stages {
+      stage('Hello') {
+         steps {
+            echo 'Hello World'
+         }
+      }
+   }
+}
